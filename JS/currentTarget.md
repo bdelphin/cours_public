@@ -98,3 +98,22 @@ function handleGridClick(event) {
     // ça pourra donc être "cell01" si l'utilisateur a cliqué sur la cellule 01, "cell02", "cell03", etc.
     // target, c'est le garde du corps qui s'est mis sur la trajectoire de la balle !
 }
+```
+
+## À quoi ça sert, currentTarget & target ?
+
+target & currentTarget contiennent un élément HTML, le même genre d'élément que l'on peut récupérer avec un `querySelector` ou un `getElementById`. On peut donc utiliser toutes les propriétés et méthodes que l'on utilise habituellement sur un élément !
+
+Quelques exemples : 
+
+- .id : l'id de l'élément
+- .classList : la liste des classes de l'élément (on peut aussi utiliser `.classList.add()` et `.classList.remove()` !)
+- .innerHTML ou .textContent, pour modifier le contenu de l'élément
+- .append ou .appendChild : pour ajouter un nouvel élément HTML comme enfant de cet élément
+- .attributes, .setAttribute() ou .getAttribute(), pour accéder aux attributs de l'élément, en ajouter, en supprimer.
+- .style, pour accéder ou modifier le style CSS de l'élément
+- etc.
+
+On peut utiliser toutes les propriétés & méthodes listées ici : [doc MDN sur les Éléments](https://developer.mozilla.org/fr/docs/Web/API/Element)
+
+Dans l'exemple ci-dessus, on se sert de target & currentTarget pour récupérer l'id de l'élément HTML correspondant.
