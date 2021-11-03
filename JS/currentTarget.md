@@ -104,7 +104,7 @@ function handleGridClick(event) {
 
 target & currentTarget contiennent un élément HTML, le même genre d'élément que l'on peut récupérer avec un `querySelector` ou un `getElementById`. On peut donc utiliser toutes les propriétés et méthodes que l'on utilise habituellement sur un élément !
 
-Quelques exemples : 
+Quelques exemples :
 
 - .id : l'id de l'élément
 - .classList : la liste des classes de l'élément (on peut aussi utiliser `.classList.add()` et `.classList.remove()` !)
