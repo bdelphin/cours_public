@@ -17,11 +17,19 @@ Sur cette fiche, vous trouverez un récap (très rapide) des notions qu'on a vu 
 
     // exemple de concaténation
     console.log(param1 + param2);
+
+    return 'ok !';
   }
 
   // appel de la fonction
   const valeurRetour = maFonction('hello ', 'world !');
   ```
+
+  De la doc si besoin :
+  
+  - [let](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/let)
+  - [const](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/const)
+  - [fonctions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions)
 
 ## Épisode 2
 
@@ -59,6 +67,7 @@ Sur cette fiche, vous trouverez un récap (très rapide) des notions qu'on a vu 
   - `element.classList` permet de récupérer la liste des classes d'un élément (dans un tableau)
   - `element.classList.add('nouvelle-classe');` pour ajouter une classe à un élément
   - `element.classList.remove('nouvelle-classe');` pour supprimer une classe sur un élément
+  - `element.classList.toggle('classe');` pour ajouter ou supprimer une classe
 - lire/modifier n'importe quel attribut :
   - `element.attributes` permet de récupérer la liste des attributs d'un élément (dans un tableau)
   - `element.setAttribute('nom-attribut', 'valeur');` pour ajouter un attribut à un élément
@@ -129,7 +138,7 @@ Quelques liens vers la doc MDN :
 
 - ajouter des éléments dans le DOM :
   - avec innerHTML (vu la veille)
-  - avec createElement() puis append() / appendChild() :
+  - avec createElement() puis append() / appendChild() / prepend() :
 
     ```html
     <div id="div-test"></div>
@@ -147,6 +156,19 @@ Quelques liens vers la doc MDN :
     // et enfin on l'ajoute au <div></div>
     myDiv.append(newP);
     ```
+
+- les datasets : le mieux c'est de lire [la doc](https://developer.mozilla.org/fr/docs/Learn/HTML/Howto/Use_data_attributes) !
+
+Plus d'infos :
+
+- [addEventListener](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener)
+- [Intro aux events](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Building_blocks/Events)
+- [Référence des évèvenements](https://developer.mozilla.org/fr/docs/Web/Events)
+- [createElement](https://developer.mozilla.org/fr/docs/Web/API/Document/createElement)
+- [append](https://developer.mozilla.org/en-US/docs/Web/API/Element/append)
+- [appendChild](https://developer.mozilla.org/fr/docs/Web/API/Node/appendChild)
+- [prepend](https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend)
+- [preventDefault](https://developer.mozilla.org/fr/docs/Web/API/Event/preventDefault)
 
 ## Épisode 5
 
