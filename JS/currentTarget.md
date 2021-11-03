@@ -48,7 +48,7 @@ Ok, c'est bien beau tout ça, mais je ne sais toujours pas à quoi ça sert, et 
 
 `event.currentTarget`, c'est __l'élément HTML sur lequel on a attaché l'évènement__. Dans notre cas, c'est donc `myButton` ! (remontez un peu, on a bien attaché notre eventListener sur `myButton`)
 
-`event.currentTarget`, c'est __l'élément HTML sur lequel l'utilisateur a vraiment cliqué__. Dans notre cas, ce sera aussi `myButton`, mais pas toujours ! On va voir un exemple plus bas pour lequel target ≠ currentTarget.
+`event.target`, c'est __l'élément HTML sur lequel l'utilisateur a vraiment cliqué__. Dans notre cas, ce sera aussi `myButton`, mais pas toujours ! On va voir un exemple plus bas pour lequel target ≠ currentTarget.
 
 Pour s'en souvenir et comprendre un peu mieux, il faut imaginer que l'utilisateur est un sniper qui essaye d'assassiner un VIP. L'utilisateur vise et tire sur sa cible, mais il peut arriver que la balle n'atteigne pas vraiment la cible ... et soit par exemple interceptée par un garde du corps !
 
